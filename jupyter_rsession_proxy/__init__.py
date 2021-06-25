@@ -79,7 +79,7 @@ def setup_rserver():
         'environment': _get_env,
         'request_headers_override': {
             'X-RStudio-Root-Path': '{base_url}rstudio/',
-        ,
+        },
         'launcher_entry': {
             'title': 'RStudio',
             'icon_path': get_icon_path()
