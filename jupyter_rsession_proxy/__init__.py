@@ -80,6 +80,9 @@ def setup_rserver():
         'request_headers_override': {
             'X-RStudio-Root-Path': '{base_url}rstudio/',
         },
+        'mappath': {
+            '/auth-sign-in?appUri=%2F': '/user/sergio/test-rstudio4/rstudio/auth-sign-in?appUri=%2F',
+        },
         'launcher_entry': {
             'title': 'RStudio',
             'icon_path': get_icon_path()
