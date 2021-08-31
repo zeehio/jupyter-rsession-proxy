@@ -85,6 +85,7 @@ def setup_rserver():
     if os.environ.get('RSESSION_PROXY_RSTUDIO_1_4', False):
         server_process['request_headers_override'] = {
             'X-RStudio-Request': '{base_url}rstudio',
+            'X-RStudio-Root-Path': '{base_url}rstudio/',
         }
         server_process['launcher_entry']['path_info'] = 'rstudio/auth-sign-in?appUrl=%2F'
     return server_process
